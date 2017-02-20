@@ -49,20 +49,20 @@ public class Hanger {
 		String make = kb.nextLine();
 		System.out.println("Select a model of jet: ");
 		String model = kb.nextLine();
-		System.out.println("Select the max speed you'd like your jet to go: ");
-		int speed = kb.nextInt();
-		System.out.println("Select the maximum distance you'd like your jet to be able to travel");
-		int range = kb.nextInt();
-		System.out.println("What do you want your price to be? ");
+		System.out.println("How much are you willing to throw down for this primo jet?: ");
 		int price = kb.nextInt();
-		if (price <= 100000) {
-			System.out.println("Come on man...You think we're working for free here? ");
-		} else {
-		}
+		System.out.println("Select the maximum distance you'd like your jet to be able to travel: ");
+		int range = kb.nextInt();
+		System.out.println("Set the maximum speed you'd like your jet to be able to go: ");
+		int speed = kb.nextInt();
+//		if (price <= 100000) {
+//			System.out.println("Come on man...You think we're working for free here? ");
+//		} else {
+//		}
 
 		for (int j = 0; j < hanger.length; j++) {
 			if (hanger[j] == null) {
-				hanger[j] = new Jet(make, model, speed, range, price);
+				hanger[j] = new Jet(make, model, price, speed, range);
 				break;
 				
 			}

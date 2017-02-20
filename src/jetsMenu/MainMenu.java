@@ -27,11 +27,11 @@ public class MainMenu {
 				}
 			}
 			if (selection == 2) {
-				System.out.println(a.getMaxSpeed());
+				System.out.println(a.hanger[3]);
 
 			}
 			if (selection == 3) {
-				System.out.println(a.getMaxRange());
+				System.out.println(a.hanger[3]);
 			}
 			if (selection == 4) {
 				a.createJet();
